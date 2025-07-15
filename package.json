@@ -1,0 +1,28 @@
+{
+  "name": "oparl-nordstemmen",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Some test code to investigate the OParl interface of Nordstemmen",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levino/oparl-nordstemmen.git"
+  },
+  "author": "Levin Keller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/levino/oparl-nordstemmen/issues"
+  },
+  "homepage": "https://github.com/levino/oparl-nordstemmen#readme",
+  "devDependencies": {
+    "@biomejs/biome": "2.1.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "got": "^14.4.7"
+  }
+}
