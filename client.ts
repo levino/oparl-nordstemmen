@@ -3,10 +3,14 @@ import got from "got"
 const SYSTEM_URL =
 	"https://nordstemmen.ratsinfomanagement.net/webservice/oparl/v1.1/system"
 
-export const createClient = () => {
+interface Config {
+	systemUrl?: string
+}
+
+export const createClient = ({ systemUrl }: Config) => {
 	return {
 		getOrganizations: async () =>
-			got(SYSTEM_URL)
+			got(systemUrl)
 				.json()
 				.then(({ body }) => got(body).json())
 				.then(({ data: [{ organization }] }) => got(organization).json()),
